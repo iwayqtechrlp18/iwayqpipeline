@@ -1,4 +1,3 @@
-#StrickHostKeyChecking=no
 pipeline{
 	agent any 
 	stages{
