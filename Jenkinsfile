@@ -5,7 +5,7 @@ pipeline{
 
 			steps{
 
-				echo 'Completed'
+				echo "Completed"
 				
 			}
 		}
@@ -15,13 +15,13 @@ pipeline{
 
 				echo 'SonarQube is  completed'
 				
-		}
 			}
+		}
 		
 		stage ('Artifactory'){
 			steps{
-				echo "Artifacts are uploaded to Artifactory"			}
-}
+				echo "Artifacts are uploaded to Artifactory"
+				}
 		}
 		stage('Deploy to Test'){
 
@@ -35,7 +35,7 @@ pipeline{
 		steps{
 
 			echo 'Completed'
-		}
+			}
 		}
 		stage('Approvals'){
 
